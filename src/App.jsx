@@ -1,14 +1,6 @@
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import"./Component/nav.css"
-
-import About from './Component/About'
-import Blog from './Component/Blog'
-import Projects from './Component/Projects'
-import Service from './Component/Service'
-import Contact from './Component/Contact'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Nav from './Component/Nav'
-import Body from "./Component/Body"
-import PagenotFound from './Component/PagenotFound'
+import AnimatedRoutes from './Component/AnimatedRoutes'
 const App = () => {
  
   return (
@@ -16,17 +8,9 @@ const App = () => {
     <div>
       
       <Router>
-      <Nav/>
-        <Routes>
+         <Nav/>
+         <AnimatedRoutes/>
        
-          <Route path='/' element={<Body/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/blog' element={<Blog/>}/>
-          <Route path='/projects' element={<Projects/>}/>
-          <Route path='/service' element={<Service/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='*' element={<PagenotFound/>}/>
-        </Routes>
       </Router>
 
 

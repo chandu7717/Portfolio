@@ -4,15 +4,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
-
-
 .name
 {
     height: 700px;
     /* border: 2px solid green; */
     position: relative;
-    background-image: url("/src/Resourse/image1.jpg");
+    background-image: url("../Resourse/image1.jpg");
     position: relative;
     bottom: 30px;
 }
@@ -24,34 +23,27 @@
     font-size: 140px;
     opacity: 90%;
     transition: padding-left 0.5s;
+    font-weight: 250;
 
 }
 .content
 {
-    /* border: 2px solid red; */
     position: relative;
     left: 100px;
     margin: 30px;
     width: 500px;
     position: relative;
     top: 50px;
-    
-
 }
 .content>h1>a:hover
 {
-/* color: rgb(255, 0, 0); */
-font-size: 150px;
+/* font-size: 150px; */
 padding-left: 100px;
 transition: padding-left 0.5s;
 color: red;
-
 opacity: 100%;
 }
-h1>#about
-{
-    color: white;
-}
+
 
 
 

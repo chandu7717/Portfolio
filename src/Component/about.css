@@ -1,27 +1,57 @@
-.about
+
+
+.data
 {
-    height: 1100px;
-    /* border: 2px solid red; */
-    background-color: black;
-}
-.content
-{
-    /* border: 2px solid red; */
-    height: 1100px;
-    width: 52%;
-    margin-left: 280px;
     color: white;
-}
-p
-{
-     letter-spacing: 2px;
-    line-height: px;
-    word-spacing: 10px;
-    font-size: 19px;
-    text-indent: 5px;
-    font-weight: 5px;
-}
-a
-{
+    height: 400px;
+    width: 900px;
+    position: relative;
+    left: 20%;
+    top: 10%;
+    font-size: 55px;
+    padding-left: 40px;
     
 }
+#abou
+{
+    height: 300vh;
+    width: 100vw;
+    background-color: black;
+}
+#sign
+{
+    /* border: 2px solid red; */
+    color: white;
+    width: 150px;
+    position: relative;
+    left: 1350px;
+    bottom: 200px;
+    transition: all 0.3s ease-in-out;
+}
+#sign>a>p:hover
+{
+ padding-left: 30px;
+ color: red;
+ transition: all 0.3s ease-in-out;
+ cursor: pointer;
+}
+#sign>p
+{
+   transition: all 0.3s ease-in-out; 
+   font-size: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+
+#aboutme
+{
+    color: white;
+    width: 700px;
+    height: 1000px;
+    /* border: 2px solid red; */
+    margin-top: 400px;
+    margin-left: 25%;
+}
+
+

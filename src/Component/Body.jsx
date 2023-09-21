@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import'./Body.css'
 import { Link } from 'react-router-dom'
+import {motion} from "framer-motion"
+
 
 const Body = () => {
 
@@ -40,22 +42,52 @@ let outdata1=()=>
 }
 
   return (
-    <div className='name'>
-       <div className="content">
-       <h1 onMouseOver ={change} id='about'>
+    <motion.div className='name'>
+       <motion.div className="content">
+
+{/* first heading */}
+       <motion.h1 onMouseOver ={change} id='about'
+       variants={{
+
+        hidden: { opacity: 0, y: 200 }, visible: { opacity: 1, y: 0 },
+        }}
+        initial= "hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 0.25 }}
+       >
          <Link to={"/about"} onMouseOver={change} onMouseOut={out}>
           {data}
          </Link>
-        </h1>
-        <h1 id='work'>
+        </motion.h1>
+
+  {/* Work heading  */}
+        <motion.h1 id='work'
+        variants={{
+
+          hidden: { opacity: 0, y: 150 }, visible: { opacity: 1, y: 0 },
+          }}
+          initial= "hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.50 }}
+        >
             <Link to={"/service"} onMouseOver={projectdata} onMouseOut={outproject}>{project}</Link>
-        </h1>
-        <h1 id='contact'>
+        </motion.h1>
+
+  {/* Contact heading */}
+        <motion.h1 id='contact'
+        variants={{
+
+          hidden: { opacity: 0, y: 100 }, visible: { opacity: 1, y: 0 },
+          }}
+          initial= "hidden"
+          animate="visible"
+          transition={{ duration: 0.5, delay: 0.75 }}
+        
+        >
             <Link to={"/contact"} onMouseOver={content1} onMouseOut={outdata1}>{name}</Link>
-        </h1>
-      
-       </div>
-    </div>
+        </motion.h1>
+       </motion.div>
+    </motion.div>
   )
 }
 

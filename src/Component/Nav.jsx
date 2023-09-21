@@ -1,4 +1,7 @@
 import React from 'react'
+import"./nav.css"
+import logo from "../Resourse/Logo.png"
+
 import { Link } from 'react-router-dom'
 
 
@@ -7,7 +10,7 @@ const Nav = () => {
     
         <nav>
             <div className="logo">
-                <img src="" alt="" height={"70px"} width={"50px"}/>
+                <img src={logo} alt="" height={"80px"} width={"80px"}/>
             </div>
             <div className="info">
                 <ol>
@@ -27,8 +30,8 @@ const Nav = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to={"/blog"}>
-                          Blog
+                        <Link to={"/resume"}>
+                          Resume
                         </Link>
                     </li>
                     <li>

@@ -1,0 +1,62 @@
+#project
+{
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+a
+{
+    text-decoration: none;
+}
+#project1
+{
+    /* border: 2px solid red;    */
+    width: 550px;
+    height: 140px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 200px;
+    position: relative;
+    top: 200px;
+    transition: padding-left 0.3s ease-in;
+
+}
+#pro1,#pro2
+{
+  font-size: 100px;
+}
+
+#project2
+{
+    /* border: 2px solid red; */
+    width: 550px;
+    height: 140px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-left: 200px;
+    position: relative;
+    top: 300px;
+    transition: padding-left 0.3s ease-in;
+
+}
+#project2:hover
+{
+    padding-left: 100px;
+    transition: padding-left 0.1s ease-in;
+}
+#project1:hover
+{
+    padding-left: 100px;
+    transition: padding-left 0.1s ease-in;
+}
+#todoapp>p,#restaurent>p
+{
+ color: red;
+ font-size: 20px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+
+
