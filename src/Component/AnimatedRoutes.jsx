@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes,Route, useLocation } from 'react-router-dom'
 import About from './About'
-import Blog from './Blog'
 import Service from './Service'
 import Contact from './Contact'
 import Body from "./Body"

@@ -1,0 +1,29 @@
+#resume
+{
+    background-color: black;
+    height: 150vh;
+    width: 99vw;
+}
+#imag>img
+{
+    margin-left: 480px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+#download>a
+{
+    position: relative;
+    left: 1280px;
+    bottom: 650px;
+    transition: all 0.3s;
+}
+#download>a:hover
+{
+    padding-left: 20px;
+    transition: all 0.3s;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px red;
+    font-size: larger;
+}
+

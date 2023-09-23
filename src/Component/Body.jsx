@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import'./Body.css'
 import { Link } from 'react-router-dom'
 import {motion} from "framer-motion"
+import image from "../Resourse/myImage.jpg"
 
 
 const Body = () => {
@@ -9,7 +10,7 @@ const Body = () => {
     let[data,setdata]=useState("Hello..")
     let change=()=>
     {
-      setdata("about")
+      setdata("about..")
     }
 let out=()=>
 {
@@ -20,7 +21,7 @@ let[project,setproject]=useState("I am")
 
 let projectdata=()=>
 {
-    setproject("Work")
+    setproject("project")
 }
 
 let outproject=()=>
@@ -43,6 +44,18 @@ let outdata1=()=>
 
   return (
     <motion.div className='name'>
+      <motion.div id="image"
+       variants={{
+
+        hidden: { opacity: 0, y: 200 }, visible: { opacity: 1, y: 0 },
+        }}
+        initial= "hidden"
+        animate="visible"
+        transition={{ duration: 0.5, delay: 0.25 }}
+      
+      >
+        <img src={image} alt=""  height={750} width={530}/>
+      </motion.div>
        <motion.div className="content">
 
 {/* first heading */}
@@ -55,7 +68,7 @@ let outdata1=()=>
         animate="visible"
         transition={{ duration: 0.5, delay: 0.25 }}
        >
-         <Link to={"/about"} onMouseOver={change} onMouseOut={out}>
+         <Link to={"/about"} onMouseOver={change} onMouseOut={out} style={{color:"red"}}>
           {data}
          </Link>
         </motion.h1>
@@ -70,7 +83,7 @@ let outdata1=()=>
           animate="visible"
           transition={{ duration: 0.5, delay: 0.50 }}
         >
-            <Link to={"/service"} onMouseOver={projectdata} onMouseOut={outproject}>{project}</Link>
+            <Link to={"/projects"} onMouseOver={projectdata} onMouseOut={outproject}>{project}</Link>
         </motion.h1>
 
   {/* Contact heading */}

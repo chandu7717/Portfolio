@@ -26,6 +26,11 @@ a
 {
   font-size: 100px;
 }
+#pro1,#pro2:hover
+{
+    color: red;
+}
+
 
 #project2
 {
